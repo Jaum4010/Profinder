@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profinder.Pages.Login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2E4659">
+
+            <StackLayout Margin="10,10,10,50" >
+                <Label     Text="Profinder"
+                           Font="30"
+                           VerticalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Margin="10,10,10,60">
+                <Label Text="Digite seu e-mail"
+                           TextColor="Gray"
+                           VerticalTextAlignment="Center"
+                           HorizontalOptions="Center"/>
+                <Entry x:Name="emailEntry"
+                           TextColor="White"
+                           Placeholder="Entre com seu email"
+                           Keyboard="Email"
+                           VerticalOptions="FillAndExpand"
+                           HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <StackLayout Margin="10,10,10,10">
+                <Label Text="Digite sua senha"
+                           TextColor="Gray"
+                           VerticalTextAlignment="Center"
+                           HorizontalOptions="Center"/>
+                <Entry x:Name="passwordEntry"
+                           TextColor="Gray"
+                           Placeholder="Entre com sua senha"
+                           IsPassword="True"
+                           VerticalOptions="FillAndExpand"
+                           HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <Button Text="Ok"
+                    Margin="10,10,10,10"
+                    x:Name="BtnLogin"
+                    BackgroundColor="Orange"
+                    TextColor="White"/>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

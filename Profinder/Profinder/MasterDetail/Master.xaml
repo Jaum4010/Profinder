@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profinder.Master"
+             Title="Master"
+             Icon="favorito_antes.png"
+             BackgroundColor="#EC8D8D">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="#15A0F4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+                <Label
+                          Grid.Column="1"
+                          Grid.Row="2"
+                          Text="Profinder"
+                          TextColor="White" FontSize="Large"/>
+            </Grid>
+
+            <TableView Intent="Menu">
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="15,10">
+                            <Label Text="Sou um Professor" Font="20" VerticalTextAlignment="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell>
+                        <StackLayout Padding="15,10">
+                            <Label Text="Meus Professores Favoritos" 
+                                   Font="20" 
+                                   VerticalTextAlignment="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell>
+                        <StackLayout Padding="15,10">
+                            <Label Text="Minha Conta"
+                                   x:Name="lblConta"
+                                   Font="20" 
+                                   VerticalOptions="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell >
+                        <StackLayout Padding="15,10">
+                            <Label Text="Sair"
+                                   x:Name="btnSair"
+                                   Font="17"
+                                   VerticalTextAlignment="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profinder.Pages.Favoritos"
+             Title="Meus Professores Favoritos"
+             BackgroundColor="#2E4659">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2E4659">
+            <Label
+                
+                Text="PAGINA FAVORITOS"
+                TextColor="Wheat"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

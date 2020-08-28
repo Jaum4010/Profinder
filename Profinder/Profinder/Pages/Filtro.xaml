@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profinder.Pages.Filtro">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     BackgroundColor="#2E4659">
+            <Label Text="Selecione sua matéria"
+                   HorizontalOptions="Center"
+                   Margin="10,50,10,0"
+                   FontSize="Medium"
+                   TextColor="Gray"/>
+            <SearchBar 
+                   x:Name="SrcMateria"
+                   TextColor="White"/>
+            <Label 
+                   Text="Onde quer aprender?"
+                   HorizontalOptions="Center"
+                   Margin="10,50,10,0"
+                   TextColor="Gray"
+                   FontSize="Medium"/>
+            <SearchBar 
+                   x:Name="SrcLocal"
+                   TextColor="White"/>
+            <Button 
+                   Text="Filtrar"                
+                   Margin="10,20,10,10"
+                   x:Name="BtnFiltrar"
+                   BackgroundColor="DarkOrange"
+                   TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
